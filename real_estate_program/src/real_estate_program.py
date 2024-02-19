@@ -2,6 +2,7 @@ import random
 from .buyer import Buyer
 from .property import Property
 
+
 class RealEstateProgram:
     def __init__(self):
         self.buyer = None
@@ -21,7 +22,9 @@ class RealEstateProgram:
 
     def purchase_property(self):
         for i, property in enumerate(self.properties):
-            print(f"{i+1}. Price: {property.price}, Square footage: {property.square_footage}, Bedrooms: {property.bedrooms}, Bathrooms: {property.bathrooms}")
+            print(f"{i+1}. Price: {property.price}, "
+                  f"Square footage: {property.square_footage}, "
+                  f"Bedrooms: {property.bedrooms}, Bathrooms: {property.bathrooms}")
         choice = int(input("Choose a property to purchase (enter number): "))
         return self.properties[choice-1]
 
