@@ -1,5 +1,6 @@
 from src.property import Property
 
+
 def test_property_init():
     property = Property(100000, 2000, 3, 2)
     assert property.price == 100000
